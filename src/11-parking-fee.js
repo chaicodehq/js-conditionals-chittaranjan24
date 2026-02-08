@@ -37,7 +37,7 @@ export function calculateParkingFee(hours, vehicleType) {
     return -1;
   }
 
-  const roundedHours = Math.round(hours);
+  const roundedHours = Math.ceil(hours);
   let fee = 0;
 
   if (vehicleType === "car") {
